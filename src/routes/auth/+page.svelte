@@ -119,19 +119,40 @@
 	</div>
 
 	<div class=" bg-white dark:bg-gray-950 min-h-screen w-full flex justify-center font-primary">
-		<!-- <div class="hidden lg:flex lg:flex-1 px-10 md:px-16 w-full bg-yellow-50 justify-center">
+		<div class="hidden lg:flex lg:flex-1 px-10 md:px-16 w-full justify-center bg-gradient-to-r from-teal-100 to-teal-500">
 			<div class=" my-auto pb-16 text-left">
 				<div>
-					<div class=" font-semibold text-yellow-600 text-4xl">
-						{$i18n.t('Get up and running with')} <br /> {$i18n.t('large language models, locally.')}
+					<div class=" font-semibold text-teal-900 text-4xl">
+						AI4EOSC Large Language Models (LLMs) for the EOSC.
 					</div>
 
-					<div class="mt-2 text-yellow-600 text-xl">
-						{$i18n.t('Run Llama 2, Code Llama, and other models. Customize and create your own.')}
+					<div class="mt-2 text-teal-600 text-xl">
+					    This service is provided by the <a class="font-semibold underline" href="https://ai4eosc.eu/" title="AI4EOSC project">AI4EOSC project</a> as a preview. 
+					</div>
+					<div class="mt-5 text-teal-900 text-sm">
+					    <p class="mt-2">
+						    This service is provided “AS IS”, and AI4EOSC consortium members makes no other warranties, express or implied, 
+						    and hereby disclaims all implied warranties, including any warranty of merchantability and warranty of fitness for a particular purpose.
+					    </p>
+					    <p class="mt-2">
+						    By acessing this service you accept the 
+						    <a class="font-semibold underline" href="https://ai4eosc.eu/platform/privacy-policy/" title="Platform privacy policy" target="_blank">privacy policy</a>
+	        	                            and the 
+	                	                    <a class="font-semibold underline" href="https://ai4eosc.eu/platform/acceptable-use-policy/" title="Acceptable use policy" target="_blank">acceptable use policy</a>.
+					    </p>
+	
+                		            <p class="mt-2">
+						AI4EOSC receives funding from the European Union's Horizon Europe 2022 research and innovation programme under agreement <a href="https://cordis.europa.eu/project/id/101058593" title="CORDIS project entry">101058593</a>.
+					    </p>
+
+                		            <p class="mt-2">
+						This service is based on a customized version of <a class="font-semibold underline" href="https://openwebui.com/" title="Open WebUI">Open WebUI</a>.
+					    </p>
+
 					</div>
 				</div>
 			</div>
-		</div> -->
+		</div>
 
 		<div class="w-full sm:max-w-md px-10 min-h-screen flex flex-col text-center">
 			{#if ($config?.features.auth_trusted_header ?? false) || $config?.features.auth === false}
